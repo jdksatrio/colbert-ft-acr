@@ -15,7 +15,7 @@ Modify the system-installed ColBERT training code to conditionally use Distribut
 ## Files Modified
 
 ### 1. Launcher Fix
-**File:** `/Users/satrio/anaconda3/envs/colbert/lib/python3.9/site-packages/colbert/infra/launcher.py`
+**File:** `/anaconda3/envs/colbert/lib/python3.9/site-packages/colbert/infra/launcher.py`
 
 **Changes:**
 - Added logic to use `launch_without_fork` for CPU-only training
@@ -23,7 +23,7 @@ Modify the system-installed ColBERT training code to conditionally use Distribut
 - Improved GPU detection and CPU fallback
 
 ### 2. Training Fix (Main Fix)
-**File:** `/Users/satrio/anaconda3/envs/colbert/lib/python3.9/site-packages/colbert/training/training.py`
+**File:** `/anaconda3/envs/colbert/lib/python3.9/site-packages/colbert/training/training.py`
 
 **Original Code (lines 51-55):**
 ```python
